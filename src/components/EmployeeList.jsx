@@ -16,7 +16,7 @@ export const EmployeeList = () => {
   };
 
   return (
-    <div className="list_container d-flex justify-content-evenly flex-wrap" style={{ maxWidth: "1200px" }}>
+    <div className="list_container d-flex justify-content-evenly flex-wrap" style={{ maxWidth: "1200px",margin:"20px auto" }}>
       {/* On clicking this card anywhere, user goes to user details */}
       {employees.map((e) => (
         <Link to={`/employees/${e.id}`}>
