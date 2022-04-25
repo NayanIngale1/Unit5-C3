@@ -1,15 +1,20 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../Context/AuthContext";
 
 export const Logout = () => {
   // log user out. it's just an inmemory value in context api
 
+  const { handleAuth } = useContext(AuthContext);
 
-const {handleAuth}=useContext()
-
+  useEffect(() => {
+    handleAuth(false);
+  }, []);
 
   return (
-    <div>
-      <p class="h1">Log Out SuccessFull</p>
-    </div>
+    <>
+      <p class="h1" style={{ margin: "40px auto" }}>
+        Log Out SuccessFully
+      </p>
+    </>
   );
 };

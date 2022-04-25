@@ -7,6 +7,8 @@ import { ProtectedRoute } from "./components/PrivateRoute";
 import { Navbar } from "./components/Navbar";
 import { Logout } from "./components/Logout";
 import { Route, Routes } from "react-router-dom";
+import "./App.css"
+
 
 function App() {
   return (
